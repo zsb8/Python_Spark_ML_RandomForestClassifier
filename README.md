@@ -37,6 +37,7 @@ def evaluate_model(model, validation_data):
     auc = evaluator.evaluate(predictions)
     return auc
 ~~~
+The best AUC is: 0.7632570521096346, it is better the model which was used pyspark.mllib.tree DecisionTree.
 ![image](https://user-images.githubusercontent.com/75282285/195732833-3313f096-033d-481b-8d3b-bb638facbb2a.png)
 
 
