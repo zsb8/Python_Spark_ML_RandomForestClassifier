@@ -31,15 +31,16 @@ def prepare_data():
 
 
 def pipeline():
-    print("Begin to use StringIndexer")
+    print("Begin to use StringIndexer.")
     string_indexer = StringIndexer(inputCol="alchemy_category", outputCol="alchemy_category_Index")
-    print("Begin to use OneHotEncoder")
+    print("Begin to use OneHotEncoder.")
     encoder = OneHotEncoder(dropLast=False,
                             inputCol='alchemy_category_Index',
                             outputCol="alchemy_category_IndexVec")
-    print("Begin to use VectorAssember")
+    print("Begin to use VectorAssember.")
     assembler_inputs = ['alchemy_category_IndexVec'] + row_df.columns[4: -1]
     assembler = VectorAssembler(inputCols=assembler_inputs, outputCol="features")
+    print("Begin to use RandomForestClassifier.")
     rf = RandomForestClassifier(labelCol="label", featuresCol="features", numTrees=10)
     param_grid = ParamGridBuilder() \
         .addGrid(rf.impurity, ["gini", "entropy"]) \
@@ -75,15 +76,13 @@ if __name__ == "__main__":
     n_pipeline = pipeline()
     print("Train data stage.")
     pipeline_model = n_pipeline.fit(train_d)
-    print(pipeline_model.stages[3])
-    print(pipeline_model.stages[3].toDebugString[:1000])
     print("Prediction stage.")
     predicted = pipeline_model.transform(test_d)
     print(predicted.columns)
     print(predicted.select('url', 'features', 'rawprediction', 'probability', 'label', 'prediction').show(10))
     print("Begin to evaluate stage.")
     best_auc = evaluate_model(pipeline_model, test_d)
-    print(f"best_auc")
+    print(f"best_auc={best_auc}")
 
 
 
