@@ -42,14 +42,10 @@ The best AUC is: 0.7632570521096346, it is better the model which was used pyspa
 
 
 # Spark monitor
-![image](https://user-images.githubusercontent.com/75282285/192587362-ac4c79f9-f87c-4da9-9acc-b67412eb2fa5.png)
-![image](https://user-images.githubusercontent.com/75282285/192587799-e3b653f6-4d73-4b33-8126-a1debb838366.png)
-![image](https://user-images.githubusercontent.com/75282285/192587445-b66c945a-929d-4b42-80c5-5ab5df2d35c1.png)
 
-# DebugString
-Print the DebugString.
-~~~
-print(model.toDebugString())
-~~~
+![image](https://user-images.githubusercontent.com/75282285/195733514-e300fbb5-b9d8-4322-8aac-a3e83395fa8c.png)
 
-![image](https://user-images.githubusercontent.com/75282285/192617611-b294921c-5be5-4393-9073-96793e3c46b4.png)
+![image](https://user-images.githubusercontent.com/75282285/195733275-dccde786-d75b-4cac-b654-38e4c99313a7.png)
+
+
+
