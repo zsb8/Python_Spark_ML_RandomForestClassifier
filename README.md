@@ -9,7 +9,9 @@ Used the library is pyspark.ml.
 
 # Stage1:  Read data
 Placed the tsv on hadoop. Built 3 data sets: (1) Train data, (3) test data.
-![image](https://user-images.githubusercontent.com/75282285/195733599-3eee52ba-5cc9-4009-b9b1-99300ea34679.png)
+This is the test data set sample.
+![image](https://user-images.githubusercontent.com/75282285/195733643-a130cee3-e69d-48c5-8770-01c456bf9b4b.png)
+
 
 
 # Stage2: Find the best model
