@@ -9,7 +9,11 @@ Used the library is pyspark.ml.
 
 # Stage1:  Read data
 Placed the tsv on hadoop. Built 3 data sets: (1) Train data, (3) test data.
+
 This is the test data set sample.
+~~~
+test_d.select('url', 'alchemy_category', 'alchemy_category_score', 'is_news', 'label').show(10)
+~~~
 ![image](https://user-images.githubusercontent.com/75282285/195733643-a130cee3-e69d-48c5-8770-01c456bf9b4b.png)
 
 
