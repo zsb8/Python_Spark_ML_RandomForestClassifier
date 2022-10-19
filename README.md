@@ -1,6 +1,6 @@
 Data is pubic.
 # Python_Spark_ML_RandomForestClassifier
-Use RandomForest to find the best the AUC(Area under the Curve of ROC)
+Use RandomForest to find the best the AUC(Area under the Curve).
 
 
 Running environment is Spark + Hadoop + PySpark    
