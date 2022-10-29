@@ -36,7 +36,7 @@ test_d.select('url', 'alchemy_category', 'alchemy_category_score', 'is_news', 'l
 
 # Stage3: Evaluate
 Calculated the AUC using test data set. 
-~~~
+~~~python
 def evaluate_model(model, validation_data):
     evaluator = BinaryClassificationEvaluator(rawPredictionCol="rawPrediction",
                                             labelCol="label",
