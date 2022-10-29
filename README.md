@@ -19,7 +19,7 @@ test_d.select('url', 'alchemy_category', 'alchemy_category_score', 'is_news', 'l
 
 
 # Stage2: Find the best model
-~~~
+~~~python
     rf = RandomForestClassifier(labelCol="label", featuresCol="features", numTrees=10)
     param_grid = ParamGridBuilder() \
         .addGrid(rf.impurity, ["gini", "entropy"]) \
