@@ -1,5 +1,6 @@
-This is a sample code and not actual business code. I will not share the company's proprietary code.      
-However, the data used in this sample code is publicly available.
+This is a sample code and not intended for actual business use. The company's proprietary code will not be shared.<br>
+However, the dataset used in this code is publicly available.<br>
+
 # Python_Spark_ML_RandomForestClassifier
 Use RandomForest to find the best the AUC(Area under the Curve).
 
